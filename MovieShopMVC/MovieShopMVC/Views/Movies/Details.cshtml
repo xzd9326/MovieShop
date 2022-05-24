@@ -1,0 +1,87 @@
+﻿@model ApplicationCore.Models.MovieDetailsModel
+@{
+    ViewData["Title"] = "Movie Details";
+}
+
+<div class="rounded">
+    <div class="container-fluid">
+        <div class="row">   
+            <div class="col-3">
+                Movie Poster
+            </div>
+            <div class="col-4">
+                Movie Details <span class="badge rounded-pill bg-secondary">Genre1</span>
+                <span class="badge rounded-pill bg-secondary">Genre2</span>
+                <span class="badge rounded-pill bg-secondary">Genre3</span>
+            </div>
+            <div class="d-grid gap-2 col-2 mx-auto">
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#reviewModal">REVIEW</button>
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#buyModal"">BUY $Price</button>
+                <!-- Modal -->
+                <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                MOVIE FACTS
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Release Date <span class="badge rounded-pill bg-dark">Date</span></li>
+                  <li class="list-group-item">RunTime <span class="badge rounded-pill bg-dark">Time</span></li>
+                  <li class="list-group-item">Box Office <span class="badge rounded-pill bg-dark">Revenue</span></li>
+                  <li class="list-group-item">Budget <span class="badge rounded-pill bg-dark">Budget</span></li>
+                  <li class="list-group-item">Two Symbols</li>
+                </ul>
+                TRAILERS
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">First Trailer</li>
+                  <li class="list-group-item">Second Trailer</li>
+                  <li class="list-group-item">Third Trailer</li>
+                </ul>
+            </div>
+            <div class="col-8">
+                CAST
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">First Actor</li>
+                  <li class="list-group-item">Second Actor</li>
+                  <li class="list-group-item">Third Actor</li>
+                  <li class="list-group-item">Fourth Actor</li>
+                  <li class="list-group-item">Fifth Actor</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
