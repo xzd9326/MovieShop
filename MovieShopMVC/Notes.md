@@ -81,3 +81,67 @@ HomeController c = new HomeController();
 1. Two ways to model our Code first design
 	1. Data Annotations
 	1. Fluent API takes
+
+
+Authentication & Authorization
+
+public pages/annonymous user
+
+Home
+Movie Details
+Cast Details
+Login Page
+Register Page
+User Functionality
+
+BUY Movie
+Favorite Movie
+Review Movie
+Get Movies Purchased by user
+Get Movies Favorited by user
+Admin Functionality - Role of Admin
+
+Create Movie
+Create Cast
+Get Popular Movies from and to dates -> Report data
+Create Register
+Create Links for Register and Login
+HttpContext => it will give you all the information regarding the http request
+
+Registeration Passwords should always be hashed with Salt
+
+U1 -> abc@abc.com (Abc123!! + sfhdskfjds) Hash1Alg -> gvsfdgfdgfdgfdgfdgfdgdfgbgfd U2 -> xyx@xyx.com (Abc123!! + fslkdfsdlf) Hash1Alg -> jghjfhgjfgjnhgfjhgfjhfgjhfjn
+
+Encryption (two way) -> Credit Cards, Secret answers, SSN, DL Hashing (one way) -> Passwords
+
+Login U1 -> abc@abc.com (Abc123!! + sfhdskfjds) Hash1Alg -> gvsfdgfdgfdgfdgfdgfdgdfgbgfd == hash stored in database Compare hashes
+
+
+Company ABC
+
+Team .NET MovieShop WEB App (ASP.NET Core MVC)
+MovieShop Database
+
+API => so that other teams/languages can understand that API
+HTTP Protocal
+JSON Data
+
+2 Categories
+	old school Web services -> SOAP Protcol
+	REST API -> Architecture pattern, HTTP HTTP GET, PUT, POST DELETE
+	Http Status Codes
+
+	URL =>
+
+	GET	 http://movieshop.com/api/movies/2
+	POST http://movieshop.com/api/account/register
+
+	Documentation => Swagger Documentation
+
+
+1 Mobile APP
+	iOS -> iOS Team Swift
+	Android -> Team Java
+
+
+
